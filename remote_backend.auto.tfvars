@@ -1,0 +1,5 @@
+    bucket = "backend-s3-remote-state-20210923223009885800000001"
+    dynamodb_table = "terraform-state"
+    region = "us-east-1"
+    encrypt = "true"
+    key = "terraform.tfstate"
