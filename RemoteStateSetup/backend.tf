@@ -12,7 +12,7 @@ resource "aws_kms_alias" "key-alias" {
 resource "aws_s3_bucket" "terraform-state" {
  bucket_prefix = "backend-s3-remote-state-"
  acl    = "private"
-
+ force_destroy = true
  versioning {
    enabled = true
  }
