@@ -5,6 +5,7 @@ How to Run the Project?
 Running Terraform:
 
 Commands:
+
 cd .\RemoteStateSetup\
 terraform init
 terraform apply -auto-approve
@@ -16,6 +17,7 @@ Destroying all resources:
 (Must be executed from terraform-iac directory or root directory of this branch)
 
 Commands:
+
 terraform destroy -var-file="environments/stage/stage.tfvars"
 cd .\RemoteStateSetup\
 terraform destroy
