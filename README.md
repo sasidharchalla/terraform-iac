@@ -8,9 +8,13 @@ Commands:
 
 cd .\RemoteStateSetup\
 terraform init
+
 terraform apply -auto-approve
+
 cd..
+
 terraform init -reconfigure -backend-config="remote_backend.auto.tfvars"
+
 terraform apply -auto-approve -target="module.vpc" -var-file="environments/stage/stage.tfvars"
 
 Destroying all resources:
